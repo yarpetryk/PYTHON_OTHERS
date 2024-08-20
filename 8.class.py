@@ -5,6 +5,7 @@ class Person:
         self.name = name
         print('My name is %s' % self.name)
 
+
     # def party(self, bottle):
     #     self.bottle += bottle
     #     print('I take %d' % self.bottle, 'bottles')

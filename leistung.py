@@ -170,24 +170,24 @@ data = [{
 			"deltaCurrency": 0.30627688172043005,
 			"valuesType": 1
 		}]
-sum_consumption_1 = sum([el['delta'] for el in data])
-sum_consumption_2 = sum([el['delta'] for el in data if el['timestamp'] < int(timestamp)])
+sum_consumption_1 = sum([el['delta']*el['deltaCurrency'] for el in data])
+#sum_consumption_2 = sum([el['delta'] for el in data if el['timestamp'] < int(timestamp)])
 
-#sum_feedin = sum([abs(el['delta']) for el in data if el['delta'] < 0])
-#sum_generation = sum([el['value'] for el in data])
-#x = [el['timestamp'] for el in data]
-#timestamp = [(datetime.fromtimestamp(el['timestamp']).strftime('%H:%M'), el['timestamp']) for el in data]
+# sum_feedin = sum([abs(el['delta']) for el in data if el['delta'] < 0])
+# sum_generation = sum([el['value'] for el in data])
+# x = [el['timestamp'] for el in data]
+# timestamp = [(datetime.fromtimestamp(el['timestamp']).strftime('%H:%M'), el['timestamp']) for el in data]
 
 print(sum_consumption_1)
-print(sum_consumption_2)
-print(timestamp)
+# print(sum_consumption_2)
+# print(timestamp)
+#
+# test_data = [2, 3, 4, 5, 6]
 
-test_data = [2, 3, 4, 5, 6]
-
-result = [sum(el*el) for el in range(10)]
-
-class Person:
-	def __init__(self, name, age):
-		self.name = name
-		self.age = age
-
+result = sum([el*el for el in range(5)])
+print(result)
+#
+# class Person:
+# 	def __init__(self, name, age):
+# 		self.name = name
+# 		self.age = age

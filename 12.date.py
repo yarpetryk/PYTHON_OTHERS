@@ -16,7 +16,8 @@ def get_month():
         "timestamp_current_month": timestamp_current_month,
         "timestamp_prev_month": timestamp_prev_month
     })
-    print(time.time() > 1710942608.966718)
+    print(int(time.time()))
+    print(datetime.now().strftime("%s"))
 
 
 get_month()
