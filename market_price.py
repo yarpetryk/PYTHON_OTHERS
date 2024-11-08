@@ -1,0 +1,76 @@
+data = [{
+	"price": 0.06479,
+	"timestamp": 1
+}, {
+	"price": 0.061,
+	"timestamp": 2
+}, {
+	"price": 0.05122,
+	"timestamp": 3
+}, {
+	"price": 0.04858,
+	"timestamp": 4
+}, {
+	"price": 0.05775,
+	"timestamp": 5
+}, {
+	"price": 0.06986,
+	"timestamp": 6
+}, {
+	"price": 0.09329000000000001,
+	"timestamp": 7
+}, {
+	"price": 0.11948,
+	"timestamp": 8
+}, {
+	"price": 0.12037,
+	"timestamp": 9
+}, {
+	"price": 0.10009,
+	"timestamp": 10
+}, {
+	"price": 0.08,
+	"timestamp": 11
+}, {
+	"price": 0.05951,
+	"timestamp": 12
+}, {
+	"price": 0.03154,
+	"timestamp": 13
+}, {
+	"price": 0.01248,
+	"timestamp": 14
+}, {
+	"price": 0.01453,
+	"timestamp": 15
+}, {
+	"price": 0.03006,
+	"timestamp": 16
+}, {
+	"price": 0.07118000000000001,
+	"timestamp": 17
+}, {
+	"price": 0.08756,
+	"timestamp": 18
+}, {
+	"price": 0.10027,
+	"timestamp": 19
+}, {
+	"price": 0.129,
+	"timestamp": 20
+}, {
+	"price": 0.13649,
+	"timestamp": 21
+}, {
+	"price": 0.09976,
+	"timestamp": 22
+}, {
+	"price": 0.09536,
+	"timestamp": 23
+}, {
+	"price": 0.09287999999999999,
+	"timestamp": 24
+}]
+
+result = ([el["price"] for el in data if el["timestamp"] == 15])
+print(result)
